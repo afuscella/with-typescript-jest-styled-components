@@ -13,7 +13,6 @@
     "test:integration": "cypress run --headless"
   },
   "dependencies": {
-    "eslint-import-resolver-typescript": "^2.4.0",
     "next": "latest",
     "prop-types": "^15.7.2",
     "react": "^16.8.0",
@@ -37,6 +36,7 @@
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.23.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",
