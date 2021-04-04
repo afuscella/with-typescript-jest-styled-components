@@ -19,12 +19,21 @@ module.exports = {
   },
   plugins: [
     'react',
+    'import',
     '@typescript-eslint',
   ],
   rules: {
     'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
     'react/react-in-jsx-scope': 'off',
     'import/prefer-default-export': 'off',
+    'import/extensions': 'off',
     'no-use-before-define': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
   },
 };
