@@ -10,7 +10,7 @@ yarn add -D @types/node @types/react @types/react-dom @types/styled-components b
 Also, add the import resolver to avoid any unwanted eslint issues on code.
 
 ```
-yarn add -D eslint-plugin-import @typescript-eslint/parser eslint-import-resolver-typescript
+yarn add eslint-plugin-import @typescript-eslint/parser eslint-import-resolver-typescript -D
 
 ```
 
