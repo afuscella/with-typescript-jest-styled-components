@@ -1,4 +1,40 @@
-# Example app with styled-components
+# Alura Viagens
+
+
+### Core Dependencies
+- enable typescript
+```
+yarn add -D @types/node @types/react @types/react-dom @types/styled-components babel-plugin-styled-components typescript
+```
+
+- [husky](https://github.com/typicode/husky)
+
+- [commitizen](https://github.com/commitizen/cz-cli) create commit following [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
+- [commitlint](https://github.com/conventional-changelog/commitlint#getting-started) - linter for git-commits
+
+- [eslint](https://eslint.org/docs/user-guide/getting-started) - find and fix problems in JS code
+
+- [cypress](https://www.cypress.io/) - run integration tests
+
+```
+yarn add -D cypress eslint-plugin-cypress
+```
+
+activate and extend cypress in `.eslintrc` by adding into:
+
+```
+  env: {
+    ...
+    'cypress/globals': true,
+  }
+  extends: [
+    ...
+    'plugin:cypress/recommended',
+  ]
+```
+
+---
 
 This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
 
