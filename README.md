@@ -3,34 +3,35 @@
 
 ### Core Dependencies
 - enable typescript
-```
+
+```bash
 yarn add -D @types/node @types/react @types/react-dom @types/styled-components babel-plugin-styled-components typescript
 ```
 
 Also, add the import resolver to avoid any unwanted eslint issues on code.
 
-```
+```bash
 yarn add eslint-plugin-import @typescript-eslint/parser eslint-import-resolver-typescript -D
 
 ```
 
 - [husky](https://github.com/typicode/husky)
 
-- [commitizen](https://github.com/commitizen/cz-cli) create commit following [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [commitizen](https://github.com/commitizen/cz-cli): create commit following [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
-- [commitlint](https://github.com/conventional-changelog/commitlint#getting-started) - linter for git-commits
+- [commitlint](https://github.com/conventional-changelog/commitlint#getting-started): linter for git-commits
 
-- [eslint](https://eslint.org/docs/user-guide/getting-started) - find and fix problems in JS code
+- [eslint](https://eslint.org/docs/user-guide/getting-started): find and fix problems in JS code
 
-- [cypress](https://www.cypress.io/) - run integration tests
+- [cypress](https://www.cypress.io/): run integration tests. Cypress is a combination of `cypress` and `chay`.
 
-```
+```bash
 yarn add -D cypress eslint-plugin-cypress
 ```
 
 activate and extend cypress in `.eslintrc` by adding into:
 
-```
+```bash
   env: {
     ...
     'cypress/globals': true,
@@ -39,6 +40,18 @@ activate and extend cypress in `.eslintrc` by adding into:
     ...
     'plugin:cypress/recommended',
   ]
+```
+
+- [jest](https://jestjs.io/): unit tests in JS. Jest is a combination of `jest`, `expect` and `jsdom`.
+
+```bash
+yarn add jest -D @types/jest -D eslint-plugin-jest
+```
+
+- [testing library](https://testing-library.com/): unit test of react components
+
+```bash
+yarn add -D @testing-library/jest-dom @testing-library/react @testing-library/react-hooks jest-canvas-mock jest-styled-components
 ```
 
 ---
