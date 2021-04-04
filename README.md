@@ -7,6 +7,13 @@
 yarn add -D @types/node @types/react @types/react-dom @types/styled-components babel-plugin-styled-components typescript
 ```
 
+Also, add the import resolver to avoid any unwanted eslint issues on code.
+
+```
+yarn add -D eslint-plugin-import @typescript-eslint/parser eslint-import-resolver-typescript
+
+```
+
 - [husky](https://github.com/typicode/husky)
 
 - [commitizen](https://github.com/commitizen/cz-cli) create commit following [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)

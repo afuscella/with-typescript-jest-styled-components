@@ -13,6 +13,7 @@
     "test:integration": "cypress run --headless"
   },
   "dependencies": {
+    "eslint-import-resolver-typescript": "^2.4.0",
     "next": "latest",
     "prop-types": "^15.7.2",
     "react": "^16.8.0",
