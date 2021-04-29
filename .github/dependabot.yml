@@ -1,0 +1,38 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "08:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@types/node"
+    versions:
+    - 14.14.39
+    - 14.14.41
+    - 15.0.0
+  - dependency-name: cypress
+    versions:
+    - 7.0.0
+    - 7.0.1
+    - 7.1.0
+  - dependency-name: eslint
+    versions:
+    - 7.24.0
+  - dependency-name: eslint-plugin-jest
+    versions:
+    - 24.3.4
+    - 24.3.5
+  - dependency-name: "@typescript-eslint/parser"
+    versions:
+    - 4.21.0
+  - dependency-name: "@typescript-eslint/eslint-plugin"
+    versions:
+    - 4.21.0
+  - dependency-name: react-dom
+    versions:
+    - 17.0.2
+  - dependency-name: react
+    versions:
+    - 17.0.2
